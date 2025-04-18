@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const Registration = require('./models/Registration');
+const Registration = require('../models/Registration');
 require('dotenv').config();
 
 const app = express();
