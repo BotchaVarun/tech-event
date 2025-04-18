@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Nova 2025</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <header id="about">
+    <h1>Tech Nova 2025</h1>
+    <p>Join industry leaders and innovators in this one-day event showcasing cutting-edge technology trends.</p>
+  </header>
+
+  <section id="schedule">
+    <h2>Event Schedule</h2>
+    <table>
+      <tr><th>Time</th><th>Session</th><th>Speaker</th></tr>
+      <tr><td>09:00 AM</td><td>Welcome Keynote</td><td>Jane Doe</td></tr>
+      <tr><td>10:30 AM</td><td>AI in 2025</td><td>John Smith</td></tr>
+      <tr><td>01:00 PM</td><td>Future of Web Dev</td><td>Mary Johnson</td></tr>
+    </table>
+  </section>
+
+  <section id="speakers">
+    <h2>Meet the Speakers</h2>
+    <div class="speaker">
+      <img src="../public/speaker1.jpg" alt="Jane Doe">
+      <p><strong>Jane Doe</strong><br>CEO at TechVision, expert in AI strategy.</p>
+    </div>
+    <div class="speaker">
+      <img src="../public/speaker2.jpg" alt="John Smith">
+      <p><strong>John Smith</strong><br>Lead Developer at FutureWeb, full-stack innovator.</p>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Register Now</h2>
+    <form action="/register" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <select name="eventType" required>
+        <option value="">Select Event Type</option>
+        <option value="In-Person">In-Person</option>
+        <option value="Online">Online</option>
+      </select><br>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
