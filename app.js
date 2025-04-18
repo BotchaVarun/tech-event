@@ -1,11 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const Registration = require('../models/Registration');
+
 require('dotenv').config();
 
 const app = express();
 const PORT = 8080;
+
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -29,6 +30,13 @@ mongoose.connect('mongodb+srv://varunbotcha:varun123@cluster0.afzwir6.mongodb.ne
 }).then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
+  const registrationSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    eventType: String,
+  });
+  
+  const Registration = mongoose.model('Registration', registrationSchema);
 // Routes
 app.get('/', (req, res) => {
   res.render('index');
