@@ -20,7 +20,7 @@ app.use('/public', express.static(__dirname + '/public', {
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('ejs').renderFile);
+
 app.set('view engine', 'html');
 app.use(express.json()); 
 // MongoDB Connection
