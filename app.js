@@ -5,7 +5,7 @@ const Registration = require('./models/Registration');
 require('dotenv').config();
 
 const app = express();
-const PORT = 3050;
+const PORT = 8080;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
